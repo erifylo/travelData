@@ -29,33 +29,33 @@ https://drive.google.com/file/d/1vcFJNuPhUyZ7A1b84xUj_hLQZnfqS2Og/view?usp=shari
 https://drive.google.com/file/d/1jenHZqeIwm-wB8no_yrDbmlw163ZcQ1H/view?usp=sharing
 
 ## Data structure
-├───DEFINITIVOS/  <br>
-│   ├───ESCRITORIO.png  <br>
-│   └───MOBILE FIRST.png  <br>
-├───ejemplos/
-│   ├───123.JPG
-│   ├───4134.JPG
-│   ├───Buscador.JPG
-│   ├───FAQ.JPG
-│   ├───Iniciar sesión.JPG
-│   ├───Main Page.JPG
-│   ├───Mobile First FAQ.JPG
-│   ├───Mobile First Iniciar Sesión.JPG
-│   ├───Mobile First Main Page.JPG
-│   ├───Mobile First buscador.JPG
-│   ├───Mobile First registrate.JPG
-│   ├───Regístrate.JPG
-│   ├───esc.JPG
-│   └───fabfdksjf.JPG
-├───html/
-│   ├───FAQ.html
-│   ├───buscador.html
-│   ├───mainPage.html
-│   ├───registration.html
-│   └───signUp.html
-├───style/
-│   └───style.css
-└───readme.md
+├───DEFINITIVOS/  <br/>
+│   ├───ESCRITORIO.png  <br/>
+│   └───MOBILE FIRST.png  <br/>
+├───ejemplos/ <br/>
+│   ├───123.JPG <br/>
+│   ├───4134.JPG <br/>
+│   ├───Buscador.JPG <br/>
+│   ├───FAQ.JPG <br/>
+│   ├───Iniciar sesión.JPG <br/>
+│   ├───Main Page.JPG <br/>
+│   ├───Mobile First FAQ.JPG <br/>
+│   ├───Mobile First Iniciar Sesión.JPG <br/>
+│   ├───Mobile First Main Page.JPG <br/>
+│   ├───Mobile First buscador.JPG <br/>
+│   ├───Mobile First registrate.JPG <br/>
+│   ├───Regístrate.JPG <br/>
+│   ├───esc.JPG <br/>
+│   └───fabfdksjf.JPG <br/>
+├───html/ <br/>
+│   ├───FAQ.html <br/>
+│   ├───buscador.html <br/>
+│   ├───mainPage.html <br/>
+│   ├───registration.html <br/>
+│   └───signUp.html <br/>
+├───style/ <br/>
+│   └───style.css <br/>
+└───readme.md <br/>
 
 
 ## APIs
