@@ -29,9 +29,9 @@ https://drive.google.com/file/d/1vcFJNuPhUyZ7A1b84xUj_hLQZnfqS2Og/view?usp=shari
 https://drive.google.com/file/d/1jenHZqeIwm-wB8no_yrDbmlw163ZcQ1H/view?usp=sharing
 
 ## Data structure
-├───DEFINITIVOS/
-│   ├───ESCRITORIO.png
-│   └───MOBILE FIRST.png
+├───DEFINITIVOS/  <br>
+│   ├───ESCRITORIO.png  <br>
+│   └───MOBILE FIRST.png  <br>
 ├───ejemplos/
 │   ├───123.JPG
 │   ├───4134.JPG
