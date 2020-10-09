@@ -59,7 +59,7 @@ https://drive.google.com/file/d/1jenHZqeIwm-wB8no_yrDbmlw163ZcQ1H/view?usp=shari
 
 
 ## APIs
-https://travelbriefing.org/api
+https://travelbriefing.org/api // Made by Sam Verkoelen
 
 ## Links
 Trello 
