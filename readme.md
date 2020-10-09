@@ -63,7 +63,7 @@ https://travelbriefing.org/api // Made by Sam Verkoelen
 
 ## Links
 Trello 
-https://trello.com/b/yrZcwXcd/eureka
+https://trello.com/b/yrZcwXcd/proyecto-m1
 
 ## Github
 URls for the project repo and deploy Link Repo Link Deploy
