@@ -29,7 +29,34 @@ https://drive.google.com/file/d/1vcFJNuPhUyZ7A1b84xUj_hLQZnfqS2Og/view?usp=shari
 https://drive.google.com/file/d/1jenHZqeIwm-wB8no_yrDbmlw163ZcQ1H/view?usp=sharing
 
 ## Data structure
-Classes and methods definition
+├───DEFINITIVOS/
+│   ├───ESCRITORIO.png
+│   └───MOBILE FIRST.png
+├───ejemplos/
+│   ├───123.JPG
+│   ├───4134.JPG
+│   ├───Buscador.JPG
+│   ├───FAQ.JPG
+│   ├───Iniciar sesión.JPG
+│   ├───Main Page.JPG
+│   ├───Mobile First FAQ.JPG
+│   ├───Mobile First Iniciar Sesión.JPG
+│   ├───Mobile First Main Page.JPG
+│   ├───Mobile First buscador.JPG
+│   ├───Mobile First registrate.JPG
+│   ├───Regístrate.JPG
+│   ├───esc.JPG
+│   └───fabfdksjf.JPG
+├───html/
+│   ├───FAQ.html
+│   ├───buscador.html
+│   ├───mainPage.html
+│   ├───registration.html
+│   └───signUp.html
+├───style/
+│   └───style.css
+└───readme.md
+
 
 ## APIs
 https://travelbriefing.org/api
