@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script src="https://kit.fontawesome.com/9dfed17aad.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class = "hero">
+        
+    <div class = "nav-bar">
+        <div class="nav-logo">
+            <img src="/photos/logo.png" alt= "logo">
+        </div>
+            <div class ="nav-links" id="nav-links">
+                <i class="fas fa-window-close" onclick="closeMenu()"></i>
+                <ul>
+                    <a href="#"> <li>Página de inicio </li> </a>
+                    <a href="#"><li>Buscador</li> </a>
+                    <a href="#"><li>FAQ </li> </a>
+                    <a href="#"><li>Iniciar sesión </li> </a>
+                </ul>
+                <button type="button" class="btn">Regístrate</button>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </div> 
+        
+
+  <main>
+    <section class="signup">
+      <h2>Sign Up</h2>
+      <div class="form-wrapper">
+        <form class="signup-form" action="">
+          <input type="text" id="name" placeholder="Name" />
+          <input type="text" id="destino" placeholder="Destino favorito" />
+          <input type="text" id="viaje" placeholder="Viaje de tus sueños" />
+
+          <!-- hacemos el input email type text para que no moleste la validación -->
+          <input type="text" id="email" placeholder="Email" />
+          <input type="password" id="password" placeholder="Contraseña" />
+          <input type="password" id="repeat-password" placeholder="Repetir Contraseña" />
+          
+          <!-- El atríbuto `disabled` desactiva el botón. El botón será activado o desactivado por el método `checkButton` en Signup.js -->
+          <button type="submit" class="button" id="signup-button" disabled >Sign Up</button>
+        </form>
+        <div class="message-container">
+        </div>
+      </div>
+    </section>
+  </main>
+        <div class="vertical-bar">
+            <div class="search-icon">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-search"></i>
+            </div>
+    
+            <div class="social-icons">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+            </div>
+        </div>
+        </div>
+        </div>
+
+       
+    
+    
+    <script src="/scripts/Signup.js"></script>
+    <script src="/scripts/User.js"></script>
+    <script src="/scripts/Database.js"></script>
+    <script src="/scripts/index.js"></script>
+    <script src="/scripts/Validator.js"></script>
+    </body> 
+    </html>
+</body>
+</html>
