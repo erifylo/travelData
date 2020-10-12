@@ -1,26 +1,38 @@
 const listaPaises = document.getElementById('listaPaises') ;
 const searchBar = document.getElementById('searchBar');
+const countriesURL = 'https://travelbriefing.org/countries.json'
+const uniqueURL = 'https://travelbriefing.org/`${filteredCountries}?format=json'
 let countries = [];
 
 
 console.log(searchBar);
 searchBar.addEventListener('keyup', (e) => {
-    const searchString = e.target.value;
+    const searchString = e.target.value.toLowerCase();
+    console.log(searchString);
     const filteredCountries = countries.filter (country => {
-      return country.name.includes(searchString)  
+      return country.name.toLowerCase().includes(searchString)  
     })
     displayCountries(filteredCountries);
 });
 
+/*   const responseUnique = countries.name.map (async unique => {
+   var responseUniqueMap = await fetch(uniqueURL)
+   const postResponse = await responseUniqueMap.json()
+   return postResponse
+   } )
+
+   return Promise.all (responseUnique) */ 
+
 const getCountries = async () => {
     try {
-    const response = await fetch('https://travelbriefing.org/countries.json');
+    const response = await fetch(countriesURL);
     countries = await response.json();
     displayCountries(countries);
     console.log(countries);
 } catch (err) {
     console.error(err);
 }
+    const response2 = await fetch('https://travelbriefing.org/spain?format=json');
   };
   
   getCountries();
@@ -39,3 +51,4 @@ const getCountries = async () => {
 };
 
 getCountries();
+

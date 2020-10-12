@@ -7,7 +7,7 @@
 }
 
 .hero {
-    height: 1100px;
+    height: 1000px;
     background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.6)), url("/photos/MAP1.jpg");
     background-position: center;
     background-size: cover;
@@ -240,6 +240,7 @@ width: 100%;
     width: 100%;
     max-width: 600px;
 }
+
 
 .message-container{
     width: 100%;
