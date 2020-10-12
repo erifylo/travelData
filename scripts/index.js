@@ -14,7 +14,7 @@
     var images = [];
     var time = 3000;
 
-    //image list
+    /*image list
     images[0] = "/photos/HEALTH.jpg";
     images[1] = "/photos/MONEY.jpg";
     images[2] = "/photos/VISA.jpg";
@@ -34,6 +34,6 @@
     setTimeout("changeImg()", time);
     }
 
-    window.onload = changeImg;
+    window.onload = changeImg; */
     
 

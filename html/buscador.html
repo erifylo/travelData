@@ -3,6 +3,7 @@
 <head>
     <link rel="stylesheet" href="style.css"> 
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/9dfed17aad.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,7 +27,23 @@
         </div>
         <i class="fas fa-bars" onclick="showMenu()"></i>
     </div> 
+
+    <!-- BUSCADOR -->
     
+    <div class="container">
+        <h1>busca un país!</h1>
+        <div id="searchWrapper">
+            <input
+                type="text"
+                name="searchBar"
+                id="searchBar"
+                placeholder="busca un país!"
+            />
+        </div>
+        <ul id="listaPaises"></ul>
+    </div>
+
+    <!-- VERTICAL BAR -->
     <div class="vertical-bar">
         <div class="search-icon">
             <i class="fas fa-bars"></i>
@@ -45,18 +62,11 @@
 </div>
 
 
-<div class="container">
-    <section class="countries-list">
-    </section>
-  </div>
 
-</main>
+<script src="/scripts/index.js"></script>
 <script src="/scripts/Apiextract.js"></script>
-</body>
 
 
-
-<script src="index.js"></script>
 </body> 
 </html>
 </body>
