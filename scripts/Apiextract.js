@@ -1,7 +1,8 @@
 const listaPaises = document.getElementById('listaPaises') ;
 const searchBar = document.getElementById('searchBar');
+const countryUnique = document.getElementsByClassName('countries')
 const countriesURL = 'https://travelbriefing.org/countries.json'
-const uniqueURL = 'https://travelbriefing.org/`${filteredCountries}?format=json'
+
 let countries = [];
 
 
@@ -15,13 +16,28 @@ searchBar.addEventListener('keyup', (e) => {
     displayCountries(filteredCountries);
 });
 
-/*   const responseUnique = countries.name.map (async unique => {
-   var responseUniqueMap = await fetch(uniqueURL)
-   const postResponse = await responseUniqueMap.json()
-   return postResponse
-   } )
+let myFunction = function(){
+    console.log('1', countryUnique.length);
+for (var i=0; i<countryUnique.length; i++) {
+    countryUnique[i].addEventListener('click', function() {
+        var x = this.firstElementChild.innerHTML.split(" ").join("");
 
-   return Promise.all (responseUnique) */ 
+        const uniqueURL = `https://travelbriefing.org/${x}?format=json`
+            
+        const getInformation = async () => {
+            try {
+                const infoResponse = await fetch(uniqueURL);
+                information = await infoResponse.json();
+                displayInformation(information);
+                console.log(information);
+            } catch (err){
+                console.log(err);
+            }
+        }
+        getInformation();
+    })
+    
+} }
 
 const getCountries = async () => {
     try {
@@ -32,8 +48,7 @@ const getCountries = async () => {
 } catch (err) {
     console.error(err);
 }
-    const response2 = await fetch('https://travelbriefing.org/spain?format=json');
-  };
+};
   
   getCountries();
 
@@ -47,8 +62,13 @@ const getCountries = async () => {
         `;
         })
         .join('');
-    listaPaises.innerHTML = htmlString;
+    listaPaises.innerHTML = htmlString;    
+    myFunction();
 };
+
+    const displayInformation = (information) => {
+        console.log(information)
+    }
 
 getCountries();
 
