@@ -8,12 +8,13 @@
             show.style.right = "-200px";
         }
 
+
+    //FAQ
+
+
     // FOTO SLIDE
 
-    var i = 0; //start point
-    var images = [];
-    var time = 3000;
-
+   
     /*image list
     images[0] = "/photos/HEALTH.jpg";
     images[1] = "/photos/MONEY.jpg";

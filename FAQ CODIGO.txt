@@ -1,0 +1,102 @@
+/* faq */
+
+.container-fluid{
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 100px;
+    
+}
+
+.container-fluid h2 {
+    color: #0278ae;;
+    position: relative;
+    width: 23em;
+}
+
+.container-fluid h2::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 12px;
+    width: 67px;
+    height: 2px;
+    background-color: #0278ae;
+}
+
+.accordion {
+    width: 100%;
+    padding: 0 5px;
+    border: 2px solid lightseagreen;
+    cursor: pointer;
+    border-radius: 50px;
+    display: flex;
+    margin: 10px 0;
+    align-items: center;
+}
+
+.accordion .icon {
+    margin: 0 10px 0 0;
+    width: 30px;
+    height: 30px;
+    background: url(/photos/plus_PNG113.png)  no-repeat 8px 7px #0278ae;
+    border-radius: 50%;
+    float: left;
+    transition: all .5s ease-in;
+}
+
+.accordion h5 {
+    font-size: 22px;
+    margin: 0;
+    padding: 3px 0 0 0;
+    font-weight: normal;
+    color: #e8ffc1;
+}
+
+.panel {
+    padding: 0 15px;
+    border-left: 1px solid #0278ae;
+    margin-left: 25px;
+    font-size: 14px;
+    text-align: justify;
+    overflow:z
+}
+
+
+<!-- FAQ-->
+    <div class= "container-fluid">
+        <h2>FREQUENTLY ASKED QUESTIONS</h2>
+
+            <div class="accordion">
+                <div class="icon"></div>
+                    <h5>¿Qué es travelData!?</h5>
+                </div>
+                <div class="panel">
+                    <p> mi primer página web :D</p>
+                
+                </div>
+            <div class="accordion">
+                <div class="icon"></div>
+                    <h5>¿De donde viene la información del buscador?</h5>
+                </div>
+                <div class="panel">
+                    <p> A través de la API travelbriefing.org</p>
+            </div>
+
+            <div class="accordion">
+                <div class="icon"></div>
+                    <h5>¿Quien ha hecho esta página?</h5>
+                </div>
+                <div class="panel">
+                    <p> Una Ironhacker en su primer proyecto </p>
+                
+            </div>
+            <div class="accordion">
+                <div class="icon"></div>
+                    <h5>¿Podría ser mejorado?</h5>
+                </div>
+                <div class="panel">
+                    <p> Muchísimo, y espero poder mejorarlo pronto..</p>
+                
+            </div>
+    </div>
+    

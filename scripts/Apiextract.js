@@ -1,4 +1,5 @@
 const listaPaises = document.getElementById('listaPaises') ;
+const informacionPaises = document.getElementById('informacionPaises')
 const searchBar = document.getElementById('searchBar');
 const countryUnique = document.getElementsByClassName('countries')
 const countriesURL = 'https://travelbriefing.org/countries.json'
@@ -44,20 +45,20 @@ const getCountries = async () => {
     const response = await fetch(countriesURL);
     countries = await response.json();
     displayCountries(countries);
-    console.log(countries);
 } catch (err) {
-    console.error(err);
+    console.log(err);
 }
 };
   
-  getCountries();
+getCountries();
 
   const displayCountries = (countries) => {
-    const htmlString = countries
-        .map((countries) => {
+    const htmlString = countries.map((countries) => {
+            displayInformation();
             return `
             <li class="countries">
                 <h2>${countries.name}</h2>
+               
             </li>
         `;
         })
@@ -68,7 +69,11 @@ const getCountries = async () => {
 
     const displayInformation = (information) => {
         console.log(information)
+         informacionPaises.innerHTML =  `<li class= "informacion">
+            <h3>${information.timezone.name}</h3>
+            </li>`
     }
 
 getCountries();
+
 

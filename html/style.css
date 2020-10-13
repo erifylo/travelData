@@ -3,11 +3,14 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family:  sans-serif;
+  
 }
 
+
+
 .hero {
-    height: 1000px;
+    height: 900px;
     background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.6)), url("/photos/MAP1.jpg");
     background-position: center;
     background-size: cover;
@@ -169,6 +172,9 @@ width: 100%;
 
 }
 
+
+
+
 @media (max-width: 700px) {
     .vertical-bar {
         display: none;
@@ -217,53 +223,11 @@ width: 100%;
         float: none;
         margin-left: 25px;
     }
-}
-
-/* SIGN UP Y LOGIN */
-
-.signup, .login{
-    margin-top: 85px;
-    text-align: center;
-}
-
-.form-wrapper{
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-
-.form-wrapper > form{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    max-width: 600px;
-}
 
 
-.message-container{
-    width: 100%;
-    max-width: 800px;
-}
 
 
-.message-container p{
-    background-color: var(--red-color);
-    padding: 20px;
-    margin: 10px 0;
-    color: white;
-    border-radius: 5px;
-    box-shadow: 0 0 10px #feb1b1;
-}
 
-.message-container p.correct-message {
-    background-color: rgb(47, 164, 93);
-    box-shadow: 0 0 10px #dbf1c1;
-}
-
-h2 {
-    color: #51adcf;
 }
 
 /* BUSCADOR */
@@ -307,22 +271,6 @@ h1 {
     text-align: left;
 }
 
-.character > h2 {
-    grid-area: name;
-    margin-bottom: 0px;
-}
-
-.character > p {
-    grid-area: house;
-    margin: 0;
-    margin-top: -18px;
-}
-
-.character > img {
-    max-height: 100px;
-    grid-area: image;
-}
-
 #searchBar {
     width: 100%;
     height: 32px;
@@ -342,6 +290,75 @@ h1 {
     top: 7px;
     right: 15px;
 }
+
+
+/* FAQ */
+
+
+.container-fluid{
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 100px;
+    
+}
+
+.container-fluid h2 {
+    color: white;
+    position: relative;
+    width: 23em;
+}
+
+.container-fluid h2::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 12px;
+    width: 67px;
+    height: 2px;
+    background-color: #0278ae;
+}
+
+.accordion {
+    width: 100%;
+    padding: 0 5px;
+    border: 2px solid lightseagreen;
+    cursor: pointer;
+    border-radius: 50px;
+    display: flex;
+    margin: 10px 0;
+    align-items: center;
+}
+
+.accordion .icon {
+    margin: 0 10px 0 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    float: left;
+    transition: all .5s ease-in;
+}
+
+.accordion h5 {
+    font-size: 22px;
+    margin: 0;
+    padding: 3px 0 0 0;
+    font-weight: normal;
+    color: #e8ffc1;
+}
+
+.panel {
+    padding: 0 15px;
+    border-left: 1px solid #0278ae;
+    margin-left: 25px;
+    font-size: 14px;
+    text-align: justify;
+    overflow:z
+}
+
+.panel p {
+    color: #51adcf;
+}
+
 
 
 /* Start http://www.cursors-4u.com */ * {cursor: url(https://cur.cursors-4u.net/mechanics/mec-2/mec157.cur), auto !important;} /* End http://www.cursors-4u.com */
