@@ -17,8 +17,7 @@ searchBar.addEventListener('keyup', (e) => {
     displayCountries(filteredCountries);
 });
 
-let myFunction = function(){
-    console.log('1', countryUnique.length);
+let paisUnico = function(){
 for (var i=0; i<countryUnique.length; i++) {
     countryUnique[i].addEventListener('click', function() {
         var x = this.firstElementChild.innerHTML.split(" ").join("");
@@ -28,9 +27,8 @@ for (var i=0; i<countryUnique.length; i++) {
         const getInformation = async () => {
             try {
                 const infoResponse = await fetch(uniqueURL);
-                information = await infoResponse.json();
+               let  information = await infoResponse.json();
                 displayInformation(information);
-                console.log(information);
             } catch (err){
                 console.log(err);
             }
@@ -43,8 +41,9 @@ for (var i=0; i<countryUnique.length; i++) {
 const getCountries = async () => {
     try {
     const response = await fetch(countriesURL);
-    countries = await response.json();
-    displayCountries(countries);
+    let countries = await response.json();
+  
+    return displayCountries(countries);
 } catch (err) {
     console.log(err);
 }
@@ -54,7 +53,7 @@ getCountries();
 
   const displayCountries = (countries) => {
     const htmlString = countries.map((countries) => {
-            displayInformation();
+            
             return `
             <li class="countries">
                 <h2>${countries.name}</h2>
@@ -64,16 +63,18 @@ getCountries();
         })
         .join('');
     listaPaises.innerHTML = htmlString;    
-    myFunction();
+    paisUnico();
+    return htmlString;
 };
 
-    const displayInformation = (information) => {
-        console.log(information)
-         informacionPaises.innerHTML =  `<li class= "informacion">
-            <h3>${information.timezone.name}</h3>
-            </li>`
+    const displayInformation = async (information) => {
+        let infoCountryDetail = await information;
+        console.log(infoCountryDetail, 'country detail')
+        let liCreate = document.createElement("h3");
+        liCreate.innerHTML = `${information.names.name} ${information.names.full}`;
+        informacionPaises.appendChild(liCreate)
     }
 
 getCountries();
-
+ 
 

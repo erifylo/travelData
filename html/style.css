@@ -306,17 +306,10 @@ h1 {
     color: white;
     position: relative;
     width: 23em;
+    
 }
 
-.container-fluid h2::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    right: 12px;
-    width: 67px;
-    height: 2px;
-    background-color: #0278ae;
-}
+
 
 .accordion {
     width: 100%;
