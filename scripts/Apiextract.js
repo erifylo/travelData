@@ -76,6 +76,7 @@ getCountries();
     const displayInformation = async (information) => {
         let infoCountryDetail = await information;
         console.log(infoCountryDetail, 'country detail')
+        
         let liCreate = document.createElement("p"); // nombre completo pais
         
         listaPaises.style.display = 'none';
@@ -143,12 +144,22 @@ getCountries();
         neighbors.appendChild(li14create);
 
 
-        /*let liImageCreate = document.createElement("p");
-        liImageCreate.innerHTML = `<img src="https://www.countries-ofthe-world.com/flags-normal/flag-of-${countries.name}.png" alt="flag">`
-        console.log(`https://www.countries-ofthe-world.com/flags-normal/flag-of-${countries.name}.png`)
-        flag.appendChild(liImageCreate); */
         
+        
+        
+        
+      return  banderas(infoCountryDetail)
+        
+    }
+    
+    let banderas = (countries) => {
+        let liImageCreate = document.createElement("p");
+        const htmlString =  `<img src="https://www.countries-ofthe-world.com/flags-normal/flag-of-${countries.names.name}.png" alt="flag">`;
+        console.log(`<img src="https://www.countries-ofthe-world.com/flags-normal/flag-of-${countries.names.name}.png" alt="flag">`)
+   
+        flag.appendChild(liImageCreate); 
 
+    return htmlString;
     }
 
 getCountries();
