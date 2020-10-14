@@ -10,9 +10,12 @@ informacionPaises.style.display = 'none';
 console.log(searchBar);
 searchBar.addEventListener('keyup', (e) => {
     const searchString = e.target.value.toLowerCase();
-    console.log(searchString);
-    const filteredCountries = countries.filter (country => {
-      return country.name.toLowerCase().includes(searchString)  
+    console.log(countries)
+    let filteredCountries = countries.filter (country => {
+        
+       // console.log(country)
+     return country.name.toLowerCase().includes(searchString)
+     console.log(country.name.toLowerCase().includes(searchString))  
     })
     displayCountries(filteredCountries);
 });
@@ -41,7 +44,7 @@ for (var i=0; i<countryUnique.length; i++) {
 const getCountries = async () => {
     try {
     const response = await fetch(countriesURL);
-    let countries = await response.json();
+    countries = await response.json();
   
     return displayCountries(countries);
 } catch (err) {
@@ -55,10 +58,12 @@ getCountries();
     const htmlString = countries.map((countries) => {
             
             return `
+            <button type="button" class="btn btn-outline-info">
             <li class="countries">
                 <h2>${countries.name}</h2>
                 
             </li>
+            </button>
         `;
         
         })
