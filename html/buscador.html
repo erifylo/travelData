@@ -43,34 +43,103 @@
 
        
             <ul id="listaPaises"></ul>
-        
 
+      
         <div id="informacionPaises">
-             <div id="flag"></div>
-             <div id="completo"> Full Name: </div>   
-            <div id="timeZone"> Timezone: </div>
-            <div id="languages">Language: </div>
+          <!--  <div id="flag"></div> -->
+             <!--FULL NAME-->
+             <div class = "containerDos">
+             <div class = "box"> 
+                 <div class="icon">
+                     <i class="fas fa-globe-africa"></i>
+                    </div> 
+                    <div class = "content"><h3>Full Name: </h3><div id="completo"></div> </div>
+            </div>  
 
-            <div id="electricity"> <h3>Electricity</h3>
-                <div id="voltage">Voltage:</div>
-                <div id="frequency">Frequency:</div>
-            </div>
+             <!--TIME ZONE-->
+             <div class = "box"> 
+                 <div class="icon">
+                    <i class="far fa-clock"></i>
+                 </div>
+                 <div class="content"><h3>Timezone: </h3><div id="timeZone">  </div></div>
+            </div>  
 
-            <div id="telephone">  <h3>Telephone</h3>
-                <div id="callingCode">Calling code:</div>
-                <div id="police">Police:</div>
-                <div id="ambulance">Ambulance:</div>
-                <div id="fire">Fire:</div>
-            </div>
+            <!--LANGUAGE-->
 
-            <div id="tapWater">Tap water: </div>
-            <div id="Health">Health 
-                <div id="vaccinations">Vaccinations: </div>
-                 <div id="message">Message: </div>
+
+             <div class = "box"> 
+                 <div class="icon">
+                    <i class="fas fa-language"></i>
+                 </div>
+                  <div class="content"><h3>Language:</h3><div id="languages"> </div> </div>
+                </div>  
+
+            <!--ELECTRICIDAD-->
+
+             <div class = "box">
+                 <div class="icon">
+                    <i class="fas fa-bolt"></i>
+                 </div>
+                 <div class="content">
+                   <div id="electricity"> <h3>Electricity</h3>
+                <div id="voltage"> <p>Voltage:</p></div>
+                <div id="frequency"><p>Frequency:</p></div>
+            </div>  </div>  </div>
+
+            <!-- TELEFONO-->
+
+            <div class = "box"> 
+                <div class="icon">
+                    <i class="fas fa-phone"></i>
+                </div>
+                <div class="content">
+                <div id="telephone">  <h3>Telephone</h3>
+                <div id="callingCode"> <p>Calling code: </p></div>
+                <div id="police"><p>Police:</p></div>
+                <div id="ambulance"><p>Ambulance:</p></div>
+                <div id="fire"><p>Fire:</p></div>
+            </div> </div> </div> 
+
+            <!-- WATER -->
+
+            <div class = "box">
+                <div class="icon">
+                    <i class="fas fa-faucet"></i>
+                </div>
+               <div class="content"><div id="tapWater"><h3>Tap water:</h3> </div></div> 
              </div>
 
-             <div id="currency">Currency:</div>
-             
+
+          <!--HEALTH-->   
+            <div class = "box">
+                <div class="icon">
+                    <i class="fas fa-medkit"></i>
+                </div>
+                <div class="content">
+                <div id="Health"><h3>Health </h3> </div>
+                <div id="vaccinations"><p>Vaccinations:</p> </div>
+                 <div id="message"> <p>Message: </p></div>
+             </div> </div>
+
+          <!--MONEY-->   
+             <div class = "box"> 
+                 <div class="icon">
+                    <i class="fas fa-money-bill-alt"></i>
+                 </div>
+                 <div class="content">
+                 <div class="money"></div>
+                 <div id="currency"> <h3>Currency:</h3></div> </div>
+                </div>
+
+            <!--NEIGHBORS-->    
+            <div class = "box">
+                <div class="icon">
+                    <i class="fas fa-users"></i>
+                </div>
+               <div class="content"><div id="neighbors"><h3>Neighbors:</h3> </div></div> 
+             </div>
+               
+            </div>   
         </div>
     </div>
 

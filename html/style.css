@@ -249,6 +249,7 @@ h1 {
     margin: 0 auto;
     max-width: 1000px;
     text-align: center;
+    
 }
 
 #listaPaises {
@@ -257,6 +258,7 @@ h1 {
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     grid-gap: 20px;
     color: whitesmoke;
+    list-style-type: none;
 }
 
 #informacionPaises {
@@ -287,6 +289,7 @@ h1 {
     border: 1px solid #eaeaea;
     padding: 5px 10px;
     font-size: 12px;
+    margin-bottom: 40px;
 }
 
 #searchWrapper {
@@ -362,5 +365,201 @@ h1 {
 }
 
 
+/* RESULTADOS BUSCADOR */
+.containerDos .box:nth-child(1) .icon {
+    background: #319635;
+}
+
+.containerDos .box:nth-child(1) {
+    background: #4caf50;
+}
+
+.containerDos .box:nth-child(2) .icon {
+    background: #23798e;
+}
+
+.containerDos .box:nth-child(2) {
+    background: #328fa5;
+}
+
+.containerDos .box:nth-child(3) .icon {
+    background: #319635;
+}
+
+.containerDos .box:nth-child(3) {
+    background: #4caf50;
+}
+
+.containerDos .box:nth-child(4) .icon {
+    background: #23798e;
+}
+
+.containerDos .box:nth-child(4) {
+    background: #328fa5;
+}
+
+.containerDos .box:nth-child(5) .icon {
+    background: #319635;
+}
+
+.containerDos .box:nth-child(5) {
+    background: #4caf50;
+}
+
+.containerDos .box:nth-child(6) .icon {
+    background: #23798e;
+}
+
+.containerDos .box:nth-child(6) {
+    background: #328fa5;
+}
+
+.containerDos .box:nth-child(7) .icon {
+    background: #319635;
+}
+
+.containerDos .box:nth-child(7) {
+    background: #4caf50;
+}
+
+.containerDos .box:nth-child(8) .icon {
+    background: #23798e;
+}
+
+.containerDos .box:nth-child(8) {
+    background: #328fa5;
+}
+
+.containerDos .box:nth-child(9) .icon {
+    background: #319635;
+}
+
+.containerDos .box:nth-child(9) {
+    background: #4caf50;
+}
+
+
+
+
+
+.containerDos {
+    position: relative;
+    width: 1200px;
+    height: 300px;
+    margin: 10px auto;
+    background: #000000;
+}
+
+.containerDos .box {
+    position: relative;
+    width: calc(400px - 30px);
+    height: calc(300px - 30px);
+    background: black;
+    float: left;
+    margin: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.containerDos .box .icon {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ff0000;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.containerDos .box:hover .icon{
+    top:20px;
+    right: calc(50% - 40px);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+
+}
+
+.containerDos .box .icon .fas{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    transition: 0.5s;
+    color: #ffffff;
+}
+
+.containerDos .box .icon .far{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    transition: 0.5s;
+    color: #ffffff;
+}
+
+.containerDos .box:hover .icon .fas {
+    font-size: 40px;
+}
+
+.containerDos .box:hover .icon .far {
+    font-size: 40px;
+}
+.containerDos .box .content {
+    position: absolute;
+    top: 100%;
+    height: calc(100% - 100px);
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.containerDos .box:hover .content{
+
+    top: 100px;
+    opacity: 1;
+}
+
+
+.containerDos .box .content h3 {
+    margin: 0 0 10px;
+    padding: 0;
+    color: #ffffff;
+    font-size: 24px;
+}
+
+.containerDos .box .content p {
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    
+}
+
+
+@media (max-width: 889px) {
+
+    .container {
+        padding: 40px;
+        margin: 0 auto;
+        max-width: 500px;
+        text-align: center;
+    }
+
+    .containerDos {
+        position: relative;
+        width: 300px;
+        height: 100px;
+        margin: 40px auto;
+        background: #000000;
+    }
+
+}
 
 /* Start http://www.cursors-4u.com */ * {cursor: url(https://cur.cursors-4u.net/mechanics/mec-2/mec157.cur), auto !important;} /* End http://www.cursors-4u.com */

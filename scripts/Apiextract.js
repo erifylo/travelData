@@ -76,67 +76,77 @@ getCountries();
     const displayInformation = async (information) => {
         let infoCountryDetail = await information;
         console.log(infoCountryDetail, 'country detail')
-        let liCreate = document.createElement("h3"); // nombre completo pais
+        let liCreate = document.createElement("p"); // nombre completo pais
         
         listaPaises.style.display = 'none';
         informacionPaises.style.display = 'inline';
         liCreate.innerHTML = `${information.names.name} ${information.names.full}` ; // nombre completo pais
         completo.appendChild(liCreate) // nombre completo pais
 
-        let li2Create = document.createElement("h3"); // timezone
+        let li2Create = document.createElement("p"); // timezone
         li2Create.innerHTML = `${information.timezone.name}` ; // timezone
         timeZone.appendChild(li2Create);
 
-        let li3create = document.createElement("h3"); // language
+        let li3create = document.createElement("p"); // language
         const languageSelect = information.language[0].language;
         li3create.innerHTML = `${languageSelect}`//language
         languages.appendChild(li3create);
 
-        let li4create = document.createElement("h2"); //Voltage
+        let li4create = document.createElement("p"); //Voltage
         li4create.innerHTML = `${information.electricity.voltage}`
         voltage.appendChild(li4create);
 
-        let li5create = document.createElement("h2"); // Frequency
+        let li5create = document.createElement("p"); // Frequency
         li5create.innerHTML = `${information.electricity.frequency}`
         frequency.appendChild(li5create);
 
-        let li6create = document.createElement("h2"); // 
+        let li6create = document.createElement("p"); // 
         li6create.innerHTML = `${information.telephone.calling_code}`
         callingCode.appendChild(li6create);
 
-        let li7create = document.createElement("h2"); // 
+        let li7create = document.createElement("p"); // 
         li7create.innerHTML = `${information.telephone.police}`
         police.appendChild(li7create);
 
-        let li8create = document.createElement("h2"); // 
+        let li8create = document.createElement("p"); // 
         li8create.innerHTML = `${information.telephone.ambulance}`
         ambulance.appendChild(li8create);
 
-        let li9create = document.createElement("h2"); // 
+        let li9create = document.createElement("p"); // 
         li9create.innerHTML = `${information.telephone.fire}`
         fire.appendChild(li9create);
 
-        let li10create = document.createElement("h2"); // 
+        let li10create = document.createElement("p"); // 
         li10create.innerHTML = `${information.water.short}`
         tapWater.appendChild(li10create);
 
-        let li11create = document.createElement("h2"); 
+        let li11create = document.createElement("p"); 
         const vaccinationsSelect = information.vaccinations[0].name;
         li11create.innerHTML = `${vaccinationsSelect}`
         vaccinations.appendChild(li11create);
 
-        let li12create = document.createElement("h2"); 
+        let li12create = document.createElement("p"); 
         const messageSelect = information.vaccinations[0].message;
         li12create.innerHTML = `${messageSelect}`
         message.appendChild(li12create);
 
-        let li13create = document.createElement("h2"); 
+        let li13create = document.createElement("p"); 
         li13create.innerHTML = `${information.currency.name}`
         currency.appendChild(li13create);
 
-        let liImageCreate = document.createElement("h2");
+        let li14create = document.createElement("p"); 
+        const neighborSelectOne = information.neighbors[0].name;
+        const neighborSelectTwo = information.neighbors[1].name;
+        const neighborSelectThree = information.neighbors[2].name;
+        const neighborSelectFour = information.neighbors[3].name;
+        li14create.innerHTML = `${neighborSelectOne} ${neighborSelectTwo} ${neighborSelectThree} ${neighborSelectFour}`
+        neighbors.appendChild(li14create);
+
+
+        /*let liImageCreate = document.createElement("p");
         liImageCreate.innerHTML = `<img src="https://www.countries-ofthe-world.com/flags-normal/flag-of-${countries.name}.png" alt="flag">`
-        flag.appendChild(liImageCreate);
+        console.log(`https://www.countries-ofthe-world.com/flags-normal/flag-of-${countries.name}.png`)
+        flag.appendChild(liImageCreate); */
         
 
     }
