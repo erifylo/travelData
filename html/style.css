@@ -256,9 +256,18 @@ h1 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     grid-gap: 20px;
+    color: whitesmoke;
 }
 
-.listaPaises {
+#informacionPaises {
+    padding-inline-start: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 15px;
+    color: whitesmoke;
+}
+
+/* #listaPaises {
     list-style-type: none;
     background-color: #eaeaea;
     border-radius: 3px;
@@ -269,7 +278,7 @@ h1 {
         'name image'
         'house image';
     text-align: left;
-}
+} */
 
 #searchBar {
     width: 100%;
