@@ -307,65 +307,7 @@ h1 {
 }
 
 
-/* FAQ 
 
-
-.container-fluid{
-    width: 40%;
-    margin: 0 auto;
-    margin-top: 100px;
-    
-}
-
-.container-fluid h2 {
-    color: white;
-    position: relative;
-    width: 23em;
-    
-}
-
-
-
-.accordion {
-    width: 100%;
-    padding: 0 5px;
-    border: 2px solid lightseagreen;
-    cursor: pointer;
-    border-radius: 50px;
-    display: flex;
-    margin: 10px 0;
-    align-items: center;
-}
-
-.accordion .icon {
-    margin: 0 10px 0 0;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    float: left;
-    transition: all .5s ease-in;
-}
-
-.accordion h5 {
-    font-size: 22px;
-    margin: 0;
-    padding: 3px 0 0 0;
-    font-weight: normal;
-    color: #e8ffc1;
-}
-
-.panel {
-    padding: 0 15px;
-    border-left: 1px solid #0278ae;
-    margin-left: 25px;
-    font-size: 14px;
-    text-align: justify;
-    overflow:z
-}
-
-.panel p {
-    color: #51adcf;
-} */
 
 .FAQ {
     text-align: center;
@@ -426,9 +368,18 @@ h1 {
 
 /* RESULTADOS BUSCADOR */
 
-.flagOne{
-    border: yellowgreen 4px;
-}
+#flag img{
+   
+    width: 300px;
+    margin-bottom: 25px;
+    box-shadow: 0 0 10px whitesmoke;
+    
+    
+  }
+
+  
+   
+
 .containerDos .box:nth-child(1) .icon {
     background: #319635;
 }
