@@ -12,6 +12,7 @@ class Signup {
   
     }
   
+    
   
     // gestionar cambios del input "email"
     handleEmailInput = (event) => {
