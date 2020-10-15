@@ -562,4 +562,65 @@ h1 {
 
 }
 
+
+/* SIGN UP Y LOGIN */
+
+.signup, .login{
+    margin-top: 85px;
+    text-align: center;
+}
+
+.form-wrapper{
+    
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.form-wrapper > form{
+    
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+}
+
+#name, #destino, #viaje, #email, #password, #repeat-password {
+    background-color: var(--red-color);
+    padding: 10px;
+    margin: 10px 0;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px whitesmoke;
+
+}
+
+.message-container{
+    width: 100%;
+    max-width: 800px;
+}
+
+
+.message-container p{
+    background-color: var(--red-color);
+    padding: 20px;
+    margin: 10px 0;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #feb1b1;
+}
+
+.message-container p.correct-message {
+    background-color: rgb(47, 164, 93);
+    box-shadow: 0 0 10px #dbf1c1;
+}
+
+
+/* SIGNUP CHECK */
+
+
+
 /* Start http://www.cursors-4u.com */ * {cursor: url(https://cur.cursors-4u.net/mechanics/mec-2/mec157.cur), auto !important;} /* End http://www.cursors-4u.com */
