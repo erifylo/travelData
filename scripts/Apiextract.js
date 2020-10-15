@@ -140,7 +140,7 @@ getCountries();
         const neighborSelectTwo = information.neighbors[1].name;
         const neighborSelectThree = information.neighbors[2].name;
         const neighborSelectFour = information.neighbors[3].name;
-        li14create.innerHTML = `${neighborSelectOne} ${neighborSelectTwo} ${neighborSelectThree} ${neighborSelectFour}`
+        li14create.innerHTML = `${neighborSelectOne}, ${neighborSelectTwo}, ${neighborSelectThree}, ${neighborSelectFour}`
         neighbors.appendChild(li14create);
 
 
