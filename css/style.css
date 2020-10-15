@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     font-family:  sans-serif;
+    cursor: url(https://cur.cursors-4u.net/mechanics/mec-2/mec157.cur), auto !important;
   
 }
 
@@ -21,10 +22,12 @@
 .nav-bar {
     display: flex;
     padding: 40px 120px;
+    
 }
 
 .nav-logo img {
     width: 35px;
+    
 }
 
 .nav-links {
@@ -94,7 +97,7 @@ width: 100%;
     background: #000000;
     top: 0;
     left: 0;
-    position: absolute;
+    position: fixed;
 }
 
 .search-icon{
@@ -304,7 +307,7 @@ h1 {
 }
 
 
-/* FAQ */
+/* FAQ 
 
 
 .container-fluid{
@@ -362,10 +365,70 @@ h1 {
 
 .panel p {
     color: #51adcf;
-}
+} */
+
+.FAQ {
+    text-align: center;
+    
+    font-size: 2.5rem;
+    color: #fff;
+  }
+  
+  .accordion {
+    width: 90%;
+    max-width: 1000px;
+    margin: 2rem auto;
+  }
+  .accordion-item {
+    background-color: #51adcf;
+    color: whitesmoke;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.25);
+  }
+  .accordion-item-header {
+    padding: 0.5rem 3rem 0.5rem 1rem;
+    min-height: 3.5rem;
+    line-height: 1.25rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+  }
+  .accordion-item-header::after {
+    content: "\002B";
+    font-size: 2rem;
+    position: absolute;
+    right: 1rem;
+  }
+  .accordion-item-header.active::after {
+    content: "\2212";
+  }
+  .accordion-item-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+  .accordion-item-body-content {
+    padding: 1rem;
+    line-height: 1.5rem;
+    border-top: 1px solid;
+    border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
+  }
+  
+  @media(max-width:767px) {
+    html {
+      font-size: 14px;
+    }
+  }
 
 
 /* RESULTADOS BUSCADOR */
+
+.flagOne{
+    border: yellowgreen 4px;
+}
 .containerDos .box:nth-child(1) .icon {
     background: #319635;
 }
@@ -570,6 +633,30 @@ h1 {
     text-align: center;
 }
 
+.signup h2, .login h2 {
+    font-size: 2.5rem;
+    color: #fff;
+
+}
+
+button, .button{
+    height: 55px;
+    margin: 10px;
+    background-color: #0278ae;
+    color: white;
+    border: none;
+    box-shadow: 3px 3px 0px var(--red-color);
+    
+}
+
+button:hover, .button.hover{
+    background-color:#4e4e4e;
+}
+
+button:disabled, .button:disabled{
+    background-color: grey;
+}
+
 .form-wrapper{
     
     padding: 20px;
@@ -610,7 +697,7 @@ h1 {
     margin: 10px 0;
     color: white;
     border-radius: 5px;
-    box-shadow: 0 0 10px #feb1b1;
+    box-shadow: 0 0 10px pink;
 }
 
 .message-container p.correct-message {
@@ -619,7 +706,7 @@ h1 {
 } 
 
 
-/* SIGNUP CHECK */
+
 
 
 

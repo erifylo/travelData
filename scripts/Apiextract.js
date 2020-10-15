@@ -153,13 +153,16 @@ getCountries();
     }
     
     let banderas = (countries) => {
-        let liImageCreate = document.createElement("p");
-        const htmlString =  `<img src="https://www.countries-ofthe-world.com/flags-normal/flag-of-${countries.names.name}.png" alt="flag">`;
-        console.log(`<img src="https://www.countries-ofthe-world.com/flags-normal/flag-of-${countries.names.name}.png" alt="flag">`)
-   
-        flag.appendChild(liImageCreate); 
+        let flag = document.querySelector("#flag");
+        let img = document.createElement("img");
+        img.setAttribute("src", `https://www.countries-ofthe-world.com/flags-normal/flag-of-${countries.names.name}.png`)
+       console.log(img)
+       img.setAttribute("class", "flagOne")
+        // const htmlString =  `<img class = "flagOne" src="https://www.countries-ofthe-world.com/flags-normal/flag-of-${countries.names.name}.png" alt="flag" />`;
+       // console.log(`<img src="https://www.countries-ofthe-world.com/flags-normal/flag-of-${countries.names.name}.png" alt="flag">`)
+       
+     flag.appendChild(img); 
 
-    return htmlString;
     }
 
 getCountries();

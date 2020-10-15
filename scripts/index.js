@@ -12,29 +12,20 @@
     //FAQ
 
 
-    // FOTO SLIDE
+    const accordionItemHeaders = document.querySelectorAll(".accordion-item-header");
 
-   
-    /*image list
-    images[0] = "/photos/HEALTH.jpg";
-    images[1] = "/photos/MONEY.jpg";
-    images[2] = "/photos/VISA.jpg";
-    images[3] = "/photos/WEATHER.jpg";
-
-    //change image
-
-    function changeImg(){
-        document.slide.src = images[i];
-
-        if (i<images.length){
-            i++;
-        } else {
-            i = 0;
-        }
+accordionItemHeaders.forEach(accordionItemHeader => {
+  accordionItemHeader.addEventListener("click", event => {
     
-    setTimeout("changeImg()", time);
+
+    accordionItemHeader.classList.toggle("active");
+    const accordionItemBody = accordionItemHeader.nextElementSibling;
+    if(accordionItemHeader.classList.contains("active")) {
+      accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + "px";
     }
-
-    window.onload = changeImg; */
+    else {
+      accordionItemBody.style.maxHeight = 0;
+    }
     
-
+  });
+});
