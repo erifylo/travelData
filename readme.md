@@ -29,30 +29,21 @@ https://drive.google.com/file/d/1vcFJNuPhUyZ7A1b84xUj_hLQZnfqS2Og/view?usp=shari
 https://drive.google.com/file/d/1jenHZqeIwm-wB8no_yrDbmlw163ZcQ1H/view?usp=sharing
 
 ## Data structure
-├───DEFINITIVOS/  <br/>
-│   ├───ESCRITORIO.png  <br/>
-│   └───MOBILE FIRST.png  <br/>
-├───ejemplos/ <br/>
-│   ├───123.JPG <br/>
-│   ├───4134.JPG <br/>
-│   ├───Buscador.JPG <br/>
-│   ├───FAQ.JPG <br/>
-│   ├───Iniciar sesión.JPG <br/>
-│   ├───Main Page.JPG <br/>
-│   ├───Mobile First FAQ.JPG <br/>
-│   ├───Mobile First Iniciar Sesión.JPG <br/>
-│   ├───Mobile First Main Page.JPG <br/>
-│   ├───Mobile First buscador.JPG <br/>
-│   ├───Mobile First registrate.JPG <br/>
-│   ├───Regístrate.JPG <br/>
-│   ├───esc.JPG <br/>
-│   └───fabfdksjf.JPG <br/>
+├───photos/  <br/>
+├───scripts/ <br/>
+│   ├───Apiextract.js <br/>
+│   ├───Database.js <br/>
+│   ├───index.js<br/>
+│   ├───login.js <br/>
+│   ├───Signup.js <br/>
+│   ├───user.js <br/>
+│   ├───Validator.js <br/>
 ├───html/ <br/>
 │   ├───FAQ.html <br/>
 │   ├───buscador.html <br/>
-│   ├───mainPage.html <br/>
+│   ├───index.html <br/>
 │   ├───registration.html <br/>
-│   └───signUp.html <br/>
+│   └───login.html <br/>
 ├───style/ <br/>
 │   └───style.css <br/>
 └───readme.md <br/>
