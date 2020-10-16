@@ -12,7 +12,7 @@
 
 .hero {
     height: 900px;
-    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.6)), url("../map1.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.6)), url("../css/map1.jpg");
     background-position: center;
     background-size: cover;
     overflow-x: hidden;
