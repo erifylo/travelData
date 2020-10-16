@@ -7,7 +7,7 @@ La información que proporciona travelData! incluye lo siguiente: salud y vacuna
 ### MVP (DOM - CANVAS)
 <ol>
 
-<li>Página de inicio: La página de inicio presentará el concepto y las características del buscador. </li>
+<li>Página de inicio </li>
 <li>Buscador: El usuario recibirá ingresando el nombre del país, toda la información correspondiete a salud y vacunas, clima, requisitos de visa, moneda, enchufes eléctricos e idioma.
 <li>FAQ: Todo lo que querías saber sobre nuestro buscador :) </li>
 <li>Regístrate: Formulario de registro </li>
@@ -57,7 +57,7 @@ Trello
 https://trello.com/b/yrZcwXcd/proyecto-m1
 
 ## Github
-URls for the project repo and deploy Link Repo Link Deploy
+https://erifylo.github.io/travelData/index.html
 
 ## Slides
-URls for the project presentation (slides) Link Slides.com
+https://drive.google.com/file/d/1KIY_d-fEmCPkwFpyV5-znbwT3GlXXPgU/view?usp=sharing
